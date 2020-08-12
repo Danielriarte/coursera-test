@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Module2 Solution</title>
 	<style>
+
 		/***************/
 		/* Bases Style */
 		/***************/
@@ -14,52 +15,66 @@
 			box-sizing: border-box;
 			margin: 0px;
 			padding: 0px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-style: italic;
+			font-size: 16px;
 		}
 
 		/*For h1*/
 		h1 {
 			text-align: center;
 			margin-bottom: 20px;
+			margin-top: 20px;
+			font-size: 175%;
 		}
-
-		div#container {
- 			position: relative;
-  		}
 
 		/*For p*/
 		p {
 			border: 1px solid black;
 			width: 90%;
 			height: 90%;
+			margin-bottom: 20px;
+			margin-top: 20px;
 			margin-right: auto;
 			margin-left: auto;
-			margin-bottom: 20px;
-			font-family: Helvetica;
-			color: white;
+			background-color: yellow;
+			color: black 
+		}
+
+		#box{
+			position: absolute;
+			border: 1px solid black;
+			width: 250px;
+			height: 25px;
+			color: black;
+			text-align: center;
+			margin: 0;
+			top: 20px;
+			right: 5%;
+			font-size: 125%;
+		}
+
+		.box1 {
+			background-color: gold;
+		}
+		.box2{
+			background-color: #00FFFF;
+		}
+		.box3{
+			background-color: red;
 		}
 
 		/*Particular Classes*/
-		.p1 {
-			background-color: black;
-		}
-		.p2 {
-			background-color: red;
-		}
-		.p3 {
-			background-color:  gold;
-		}
-
 		.p1, .p2, .p3{
 			padding: 20px;
-		
+			padding-top: 35px;
 		}
 
-		#p1 {
-			position: absolute;
-  			background-color: gold;
-  			top: 10px;
-  			left: 10px;
+		/*ID elements*/
+		div#container{
+			position: relative;
 		}
+
 
 		/*****************************/
 		/*Simple Responsive Framework*/
@@ -74,7 +89,7 @@
 		@media (min-width: 992px) {
 			.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
 				float: left;
-				border: 1px solid green;
+				border: 1px solid white;
 			}
 
 			.col-lg-1{
@@ -119,7 +134,7 @@
 		@media (min-width: 768px) and (max-width: 991px){
 			.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
 				float: left;
-				border: 1px solid green;
+				border: 1px solid white;
 			}
 
 			.col-md-1{
@@ -158,13 +173,18 @@
 			.col-md-12{
 				width: 100%;
 			}
+
+			.p3{
+				width: 95%;
+			}
+	
 		} 
 
 		/********** Small devices only **********/
 		@media (max-width: 767px) {
 			.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
    				float: left;
-    			border: 1px solid green;
+    			border: 1px solid white;
   			}
 
   			.col-sm-1 {
@@ -211,16 +231,34 @@
 	</style>
 </head>
 <body>
-	<h1>No time for cooking? Delivery options below:</h1>
+	<h1>No time for cooking? Delivery options for you</h1>
 	<div class="row">
- 		<div class="col-lg-4 col-md-6 col-sm-12"><p class="p1" id="container">¡Pide ahora algo delicioso en WOK y paga en casa! ¿Tienes un antojo? PedidosYa lo soluciona, vamos volando donde quieras. Más Rápido. Entregamos lo mejor. App gratis para móviles. Sin necesidad de salir. Más Fácil. Promociones exclusivas. Solo un Click.¡Pide ahora algo delicioso en WOK y paga en casa! ¿Tienes un antojo? PedidosYa lo soluciona, vamos volando donde quieras. Más Rápido. Entregamos lo mejor. App gratis para móviles. Sin necesidad de salir. Más Fácil. Promociones exclusivas. Solo un Click.</p>
- 		<p id="p1">WOK</p>
+
+ 		<div class="col-lg-4 col-md-6 col-sm-12" id="container">
+ 			<p class="p1">
+ 			¡Pide ahora algo delicioso en WOK y paga en casa! ¿Tienes un antojo? PedidosYa lo soluciona, vamos volando donde quieras. Más Rápido. Entregamos lo mejor. App gratis para móviles. Sin necesidad de salir. Más Fácil. Promociones exclusivas. Solo un Click.¡Pide ahora algo delicioso en WOK y paga en casa! ¿Tienes un antojo? PedidosYa lo soluciona, vamos volando donde quieras. Más Rápido. Entregamos lo mejor. App gratis para móviles. Sin necesidad de salir. Más Fácil. Promociones exclusivas. Solo un Click.
+ 			</p>
+ 			<p id="box" class="box1">
+ 				<b>WOK 1: VEGETARIAN</b>
+ 			</p>
  		</div>
-  		<div class="col-lg-4 col-md-6 col-sm-12"><p class="p2" id="container">¡Pide ahora algo delicioso en WOK y paga en casa! ¿Tienes un antojo? PedidosYa lo soluciona, vamos volando donde quieras. Más Rápido. Entregamos lo mejor. App gratis para móviles. Sin necesidad de salir. Más Fácil. Promociones exclusivas. Solo un Click.¡Pide ahora algo delicioso en WOK y paga en casa! ¿Tienes un antojo? PedidosYa lo soluciona, vamos volando donde quieras. Más Rápido. Entregamos lo mejor. App gratis para móviles. Sin necesidad de salir. Más Fácil. Promociones exclusivas. Solo un Click.</p>
-  		<p id="p1">WOK</p>
+
+  		<div class="col-lg-4 col-md-6 col-sm-12" id="container">
+  			<p class="p2">
+  			¡Pide ahora algo delicioso en WOK y paga en casa! ¿Tienes un antojo? PedidosYa lo soluciona, vamos volando donde quieras. Más Rápido. Entregamos lo mejor. App gratis para móviles. Sin necesidad de salir. Más Fácil. Promociones exclusivas. Solo un Click.¡Pide ahora algo delicioso en WOK y paga en casa! ¿Tienes un antojo? PedidosYa lo soluciona, vamos volando donde quieras. Más Rápido. Entregamos lo mejor. App gratis para móviles. Sin necesidad de salir. Más Fácil. Promociones exclusivas. Solo un Click.
+  			</p>
+  			<p id="box" class="box2">
+ 				<b>WOK 2: VEGAN</b>
+ 			</p>
   		</div>
-  		<div class="col-lg-4 col-md-12 col-sm-12"><p class="p3" id="container">¡Pide ahora algo delicioso en WOK y paga en casa! ¿Tienes un antojo? PedidosYa lo soluciona, vamos volando donde quieras. Más Rápido. Entregamos lo mejor. App gratis para móviles. Sin necesidad de salir. Más Fácil. Promociones exclusivas. Solo un Click.¡Pide ahora algo delicioso en WOK y paga en casa! ¿Tienes un antojo? PedidosYa lo soluciona, vamos volando donde quieras. Más Rápido. Entregamos lo mejor. App gratis para móviles. Sin necesidad de salir. Más Fácil. Promociones exclusivas. Solo un Click.</p>
-  		<p id="p1">WOK</p>
+
+  		<div class="col-lg-4 col-md-12 col-sm-12" id="container">
+  			<p class="p3">
+  			¡Pide ahora algo delicioso en WOK y paga en casa! ¿Tienes un antojo? PedidosYa lo soluciona, vamos volando donde quieras. Más Rápido. Entregamos lo mejor. App gratis para móviles. Sin necesidad de salir. Más Fácil. Promociones exclusivas. Solo un Click.¡Pide ahora algo delicioso en WOK y paga en casa! ¿Tienes un antojo? PedidosYa lo soluciona, vamos volando donde quieras. Más Rápido. Entregamos lo mejor. App gratis para móviles. Sin necesidad de salir. Más Fácil. Promociones exclusivas. Solo un Click.
+  			</p>
+  			<p id="box" class="box3">
+ 				<b>WOK 3: SPICY</b>
+ 			</p>
   		</div>
 	</div>
 
