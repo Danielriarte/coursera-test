@@ -46,7 +46,7 @@ p {
 	font-size: 125%;
 }
 
-#box1{
+#boxx1{
 	position: absolute;
 	border: 1px solid black;
 	width: 250px;
@@ -180,7 +180,7 @@ div#container{
 		width: 95%;
 	}
 
-	#box1{
+	#boxx1{
 		right: 2.5%
 	}
 } 
