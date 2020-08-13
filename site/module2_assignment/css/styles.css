@@ -46,6 +46,19 @@ p {
 	font-size: 125%;
 }
 
+#box1{
+	position: absolute;
+	border: 1px solid black;
+	width: 250px;
+	height: 25px;
+	color: black;
+	text-align: center;
+	margin: 0;
+	top: 20px;
+	right: 5%;
+	font-size: 125%;
+}
+
 .box1 {
 	background-color: gold;
 }
@@ -165,6 +178,10 @@ div#container{
 	}
 	.p3{
 		width: 95%;
+	}
+
+	#box1{
+		right: 2.5%
 	}
 } 
 /********** Small devices only **********/
