@@ -1,9 +1,76 @@
 #main_content {
-	background-color: yellow;
-	height: 90%;
-	width: 90%;
 	margin-right: auto;
 	margin-left: auto;
+	margin-bottom: 40px;
+	width: 90%;
+}
+
+.col-md-12, .col-sm-12, .col-xs-12 {
+	background-color: #F1F1F2;
+}
+
+body {
+	background-color: #BCBABE;
+}
+
+.col-md-12 p, .col-sm-12 p, .col-xs-12 p {
+	height: 1000px;
+}
+
+div#main_content h2 {	
+	font-size: 16px;
+	font-weight: bold;
+}
+
+div#main_content p {
+	padding: 10px;
+}
+
+body h1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	margin:20px auto 20px;
+}
+
+body p {
+	color: black;
+}
+#nav-list {
+  margin-top: 10px;
+  background-color: #1995AD;
+}
+#nav-list a {
+  color: 000;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.1em;
+}
+
+#header-nav {
+	background-color: #A1D6E2;
+	color: black;
+	font-weight: bold;
+}
+
+.navbar-default .navbar-brand {
+	color: black;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: black;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: black;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: black;
 }
 
 
@@ -16,24 +83,3 @@
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
 	}
-
-div#main_content h2 {	
-	font-size: 16px;
-	font-weight: bold;
-	text-align: center;
-}
-
-div#main_content p {
-	padding: 3px 10px 10px;
-}
-
-body h1 {
-	font-size: 20px;
-	font-weight: bold;
-	text-align: center;
-	color: white;
-}
-
-body {
-	background-color: black;
-}
