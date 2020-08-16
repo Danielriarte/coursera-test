@@ -39,6 +39,7 @@ body p {
 #nav-list {
   margin-top: 10px;
   background-color: #1995AD;
+  margin: 5px;
 }
 #nav-list a {
   color: 000;
